@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+	<title>To Do List</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+
+		<div class="row">
+			<div class="intro col-12">
+				<h1>Js To-Do List</h1>
+				<div>
+					<div class="border1"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<button class="buttons" onclick="openModal()"><i class="fas fa-file-medical"></i></button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="listItems col-12">
+				<ul id ="taskList" class="col-12 offset-0 col-sm-8 offset-sm-2">
+
+
+
+				</ul>
+			</div>
+		</div>
+
+		<!--DELETE LIST -->
+		<div class="row">
+			<div class="col-12">
+				<button onclick="deleteToDoList()">DELETE LIST </button>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+<!-- Modal for adding a task -->
+<div class="addTaskModal">
+<!-- Modal content -->
+		<div class="modal-content col-6">
+			<span class="close">&times;</span>
+			<br>
+
+			<select class="col-12">
+				<option value=""> Select the task's category </option>
+				<option value="1"> Generic </option>
+				<option value="2"> School </option>
+				<option value="3"> Work </option>
+
+			</select>
+			<br>
+
+		</div>
+</div>
+
+<!-- Modal for editing a task -->
+<div class="editTaskModal">
+<!-- Modal content -->
+		<div class="modal-content col-6">
+			<span class="close" onclick="closeEditModal()">&times;</span>
+			<br>
+			<input class="col-12">
+			<br>
+
+		</div>
+</div>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
